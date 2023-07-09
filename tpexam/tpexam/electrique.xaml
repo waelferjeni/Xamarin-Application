@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tpexam.electrique">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Chef département" FontAttributes="Bold" TextColor="Purple"/>
+                        <Span Text=":   aymen soltani"   TextColor="Purple" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="PhoneNumber:   " FontAttributes="Bold" TextColor="Purple"/>
+                        <Span x:Name="ph"  Text="22009988"   TextColor="Purple" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Contacter"
+                    TextColor="white"
+                    BackgroundColor="Purple"
+                BorderWidth="2"
+                CornerRadius="50"
+                BorderColor="White"
+                Clicked="Call"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

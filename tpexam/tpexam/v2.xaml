@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tpexam.v2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="v2.png" HeightRequest="350" WidthRequest="700" ></Image>
+            <Label HorizontalTextAlignment="Center" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="BMW"
+                              TextColor="CadetBlue"
+                              TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                                      CommandParameter="https://www.bmw.fr/fr/accueil.html">
+                                </TapGestureRecognizer>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

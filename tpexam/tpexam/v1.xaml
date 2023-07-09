@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tpexam.v1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="v1.png" HeightRequest="350" WidthRequest="700" ></Image>
+            <Label>
+                
+            </Label>
+            <Label HorizontalTextAlignment="Center" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mercedes-benz"
+                              TextColor="Gray"
+                              TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                                      CommandParameter="https://www.mercedes-benz.fr">
+                                </TapGestureRecognizer>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

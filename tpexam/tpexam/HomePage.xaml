@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tpexam.HomePage"
+                NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source=""></Image>
+            <Entry x:Name="userNameEntry" ReturnType="Next" Placeholder="Email ID" FontSize="Medium"  TextColor="Purple" PlaceholderColor="Purple"></Entry>
+            <Entry x:Name="passwordEntry" ReturnType="Done" IsPassword="True" Placeholder="Password" FontSize="Medium" TextColor="Purple" PlaceholderColor="Purple"></Entry>
+            <Button
+                x:Name="signUp"
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="White"
+                BackgroundColor="Purple"
+                BorderWidth="2"
+                CornerRadius="50"
+                BorderColor="White"
+                Clicked="LoginValidation_ButtonClicked"
+                ></Button>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account?" TextColor="Purple"/>
+                        <Span Text="Register" FontAttributes="Bold"  TextColor="HotPink" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                    </TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

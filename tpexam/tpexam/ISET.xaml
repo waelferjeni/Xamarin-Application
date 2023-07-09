@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:dep="clr-namespace:tpexam"
+             x:Class="tpexam.ISET"
+            BarBackgroundColor="purple"
+            SelectedTabColor="yellow"
+            UnselectedTabColor="white"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            >
+    <dep:info Title="informatique" ></dep:info>
+    <dep:Gestion Title="gestion"></dep:Gestion>
+    <dep:electrique Title="electrique"></dep:electrique>
+    <dep:mecanique Title="mecanique"></dep:mecanique>
+    <dep:civil Title="civil"></dep:civil>
+</TabbedPage>
